@@ -14,8 +14,9 @@ import Sample7 from "@/app/public/claimtrade-sample-7.png";
 import Background1 from "@/app/public/1.png";
 
 import LinkedIn from "@/app/public/linkedin-3.svg";
-import Github from "@/app/public/gmail-3.svg";
-import Email from "@/app/public/github-3.svg";
+import Email from "@/app/public/gmail-3.svg";
+import Github from "@/app/public/github-3.svg";
+import Portfolio from "@/app/public/portfolio.svg";
 
 export default function Home() {
   return (
@@ -100,7 +101,7 @@ export default function Home() {
         <div className="w-full h-screen relative">
           <Image
             src={Background1}
-            alt="figma-mockup-hero"
+            alt="hero-background"
             fill
             style={{ objectFit: "cover" }}
             className="opacity-50"
@@ -117,6 +118,12 @@ export default function Home() {
             <p className="text-sm italic text-center md:text-base">
               By Raul Calero
             </p>
+
+            <Link href={"https://portfolio.starserver.one/"}>
+              <button className="btn btn-outline mt-4">
+                Visit My Portfolio
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -424,14 +431,17 @@ It has been an absolute pleasure collaborating with Raul, and I have no doubt th
           <p className="italic">Created by Raul Calero</p>
         </div>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <Link href={"/"}>
+          <Link href={"https://www.linkedin.com/in/raulcalero/"}>
             <Image src={LinkedIn} alt="linkedin" />
           </Link>
-          <Link href={"/"}>
-            <Image src={Github} alt="linkedin" />
+          <Link href={"https://github.com/TheCaptainKimchi"}>
+            <Image src={Github} alt="github" />
           </Link>
-          <Link href={"/"}>
-            <Image src={Email} alt="linkedin" />
+          <Link href={"mailto:raulcalero7@gmail.com"}>
+            <Image src={Email} alt="email" />
+          </Link>
+          <Link href={"https://portfolio.starserver.one/"}>
+            <Image src={Portfolio} alt="portfolio" />
           </Link>
         </nav>
       </footer>
