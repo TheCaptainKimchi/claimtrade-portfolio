@@ -20,7 +20,7 @@ import Portfolio from "@/app/public/portfolio.svg";
 
 export default function Home() {
   return (
-    <div className="bg-black overflow-x-hidden">
+    <div className="bg-black text-white overflow-x-hidden">
       {/* Header */}
       <header className="flex border-b-[1px] border-white w-screen justify-between items-center p-2 h-16 fixed top-0 bg-orange-700 z-50">
         <div className="flex items-center h-full justify-evenly w-1/2 md:w-1/4 lg:w-2/12">
@@ -207,10 +207,10 @@ export default function Home() {
           <div className="flex p-2 flex-col items-center justify-center bg-black/60 w-3/4 h-1/4 rounded-lg my-2 border-[1px] border-white/40 lg:w-1/2 lg:p-4">
             <h3 className="mb-2 font-bold">Key Highlights</h3>
 
-            <ul className="list-disc">
-              <li>User authentication with JWT</li>
-              <li>SPA and responsive design</li>
-              <li>Integration with AWS services</li>
+            <ul>
+              <li> - User authentication with JWT</li>
+              <li> - SPA and responsive design</li>
+              <li> - Integration with AWS services</li>
             </ul>
           </div>
         </div>
